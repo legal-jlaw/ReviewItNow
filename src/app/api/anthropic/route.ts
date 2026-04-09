@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from "next/server";
 import Anthropic from "@anthropic-ai/sdk";
 
-const client = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+function getClient() {
+  return new Anthropic({
+    apiKey: process.env.ANTHROPIC_API_KEY,
+  });
+}
 
 export const maxDuration = 60;
 
@@ -18,7 +20,7 @@ export async function POST(req: NextRequest) {
       );
     }
 
-    const response = await client.messages.create({
+    const response = await getClient().messages.create({
       model: "claude-sonnet-4-20250514",
       max_tokens: maxTokens || 2000,
       system,
