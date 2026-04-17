@@ -114,13 +114,12 @@ const FOCUS_AREAS: Record<string, string[]> = {
   litigation: ["Fiduciary duty claims","Trade secret","Non-compete enforcement","Breach of contract","IP infringement","Shareholder dispute","Delaware Chancery","All issues"],
 };
 const JURISDICTIONS = ["Auto-detect","Delaware","North Carolina","California","New York","Florida","Texas","Wyoming","Nevada","Georgia","Illinois","Massachusetts"];
-const DEFAULT_PLAYBOOK = `Liability cap: 12 months of fees paid
+const DEFAULT_PLAYBOOK = "";
+const PLAYBOOK_PLACEHOLDER = `e.g.
+Liability cap: 12 months of fees paid
 Consequential damages: mutual exclusion required
 Indemnification: mutual, capped at liability cap
-IP ownership: each party retains pre-existing IP
-Governing law: preferred state jurisdiction
-Termination for convenience: 30-day notice
-Data protection: DPA required for personal data processing`;
+IP ownership: each party retains pre-existing IP`;
 
 const C = {
   bg:"#FAFAF9", surface:"#FFFFFF", border:"#E8E4DD", borderMid:"#D0CBC2",
@@ -976,6 +975,7 @@ export default function ReviewItNow() {
                   <textarea
                     value={playbook}
                     onChange={e=>{ setPlaybook(e.target.value); setPlaybookSaved(false); setPlaybookFileName(null); }}
+                    placeholder={PLAYBOOK_PLACEHOLDER}
                     style={{...inp,minHeight:90,resize:"vertical",lineHeight:1.7,fontSize:11,fontFamily:"ui-monospace,'SF Mono',monospace"}}
                   />
                 )}
