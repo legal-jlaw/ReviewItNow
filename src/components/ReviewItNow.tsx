@@ -567,6 +567,8 @@ export default function ReviewItNow() {
 
   // ── Upload playbook from file (.docx / .txt / .md) ───────────────────────────
   const [playbookFileName, setPlaybookFileName] = useState<string|null>(null);
+  const [playbookMode, setPlaybookMode] = useState<"upload"|"paste">("paste");
+  const [playbookDragOver, setPlaybookDragOver] = useState(false);
   const uploadPlaybookFile = async (file: File) => {
     if (!file || typeof window === 'undefined') return;
     const name = file.name.toLowerCase();
@@ -949,28 +951,48 @@ export default function ReviewItNow() {
 
             {usePlaybook&&(
               <div style={{marginTop:10}}>
-                <textarea
-                  value={playbook}
-                  onChange={e=>{ setPlaybook(e.target.value); setPlaybookSaved(false); }}
-                  style={{...inp,minHeight:90,resize:"vertical",lineHeight:1.7,fontSize:11,fontFamily:"ui-monospace,'SF Mono',monospace"}}
-                />
+                <div style={{display:"flex",gap:5,justifyContent:"center",marginBottom:10}}>
+                  {[{id:"upload",label:"Upload file"},{id:"paste",label:"Paste text"}].map(m=>(
+                    <button key={m.id} onClick={()=>setPlaybookMode(m.id as "upload"|"paste")} style={{padding:"5px 14px",borderRadius:999,border:`1px solid ${playbookMode===m.id?agent.color:C.border}`,background:playbookMode===m.id?agent.light:"transparent",color:playbookMode===m.id?agent.color:C.textMid,fontSize:11,fontWeight:500,cursor:"pointer",transition:"all 0.15s"}}>{m.label}</button>
+                  ))}
+                </div>
+
+                {playbookMode==="upload"?(
+                  <label
+                    onDragOver={(e: React.DragEvent)=>{e.preventDefault();setPlaybookDragOver(true);}}
+                    onDragLeave={()=>setPlaybookDragOver(false)}
+                    onDrop={(e: React.DragEvent)=>{e.preventDefault();setPlaybookDragOver(false);const f=e.dataTransfer.files?.[0]; if(f) uploadPlaybookFile(f);}}
+                    style={{display:"block",background:playbookDragOver?agent.light:C.bg,border:`2px dashed ${playbookDragOver?agent.color:C.borderMid}`,borderRadius:12,padding:"20px 16px",cursor:"pointer",transition:"all 0.2s",textAlign:"center"}}>
+                    <input type="file" accept=".docx,.txt,.md,text/plain,text/markdown" style={{display:"none"}} onChange={e=>{const f=e.target.files?.[0]; if(f) uploadPlaybookFile(f); e.target.value="";}}/>
+                    <div style={{width:36,height:36,borderRadius:10,background:agent.light,border:`1px solid ${agent.border}`,display:"flex",alignItems:"center",justifyContent:"center",margin:"0 auto 8px"}}>
+                      <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M12 4L8 8h3v10h2V8h3L12 4z" fill={agent.color}/><path d="M4 18v2h16v-2" stroke={agent.color} strokeWidth="1.5" strokeLinecap="round"/></svg>
+                    </div>
+                    <div style={{fontSize:12,fontWeight:600,color:C.text,marginBottom:2}}>
+                      {playbookFileName ? playbookFileName : "Drop your playbook here"}
+                    </div>
+                    <div style={{fontSize:11,color:C.textSub}}>DOCX &middot; TXT &middot; MD</div>
+                  </label>
+                ):(
+                  <textarea
+                    value={playbook}
+                    onChange={e=>{ setPlaybook(e.target.value); setPlaybookSaved(false); setPlaybookFileName(null); }}
+                    style={{...inp,minHeight:90,resize:"vertical",lineHeight:1.7,fontSize:11,fontFamily:"ui-monospace,'SF Mono',monospace"}}
+                  />
+                )}
+
                 <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginTop:7}}>
                   <span style={{fontSize:11,color:C.textSub}}>
                     {playbookFileName ? `Loaded from ${playbookFileName}` : playbookLastSaved ? `Last saved ${playbookLastSaved}` : "One position per line \u00b7 Not yet saved"}
                   </span>
                   <div style={{display:"flex",gap:6}}>
-                    <label style={{padding:"3px 10px",borderRadius:5,border:`1px solid ${C.border}`,background:"transparent",color:C.textSub,fontSize:11,cursor:"pointer",display:"inline-flex",alignItems:"center"}}>
-                      Upload file
-                      <input type="file" accept=".docx,.txt,.md,text/plain,text/markdown" style={{display:"none"}} onChange={e=>{const f=e.target.files?.[0]; if(f) uploadPlaybookFile(f); e.target.value="";}}/>
-                    </label>
-                    {playbookLastSaved&&(
-                      <button onClick={clearPlaybook} style={{padding:"3px 10px",borderRadius:5,border:`1px solid ${C.border}`,background:"transparent",color:C.textSub,fontSize:11,cursor:"pointer"}}>
+                    {(playbookLastSaved||playbookFileName)&&(
+                      <button onClick={()=>{clearPlaybook();setPlaybookFileName(null);}} style={{padding:"3px 10px",borderRadius:999,border:`1px solid ${C.border}`,background:"transparent",color:C.textSub,fontSize:11,cursor:"pointer"}}>
                         Clear
                       </button>
                     )}
                     <button
                       onClick={savePlaybook}
-                      style={{padding:"4px 12px",borderRadius:5,border:`1px solid ${playbookSaved?C.lowBorder:C.borderMid}`,background:playbookSaved?C.lowBg:"transparent",color:playbookSaved?C.low:C.textMid,fontSize:11,fontWeight:500,cursor:"pointer",transition:"all 0.2s",display:"flex",alignItems:"center",gap:5}}>
+                      style={{padding:"4px 14px",borderRadius:999,border:`1px solid ${playbookSaved?C.lowBorder:C.borderMid}`,background:playbookSaved?C.lowBg:"transparent",color:playbookSaved?C.low:C.textMid,fontSize:11,fontWeight:500,cursor:"pointer",transition:"all 0.2s",display:"flex",alignItems:"center",gap:5}}>
                       {playbookSaved
                         ?<><svg width="10" height="8" viewBox="0 0 10 8" fill="none"><path d="M1 4l3 3 5-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>Saved</>
                         :"Save playbook"
