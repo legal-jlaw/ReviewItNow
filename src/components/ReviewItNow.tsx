@@ -669,18 +669,15 @@ export default function ReviewItNow() {
 
   const handlePayment = async (targetTier: string) => {
     setPaymentLoading(targetTier);
+    setLoading(true);
+    setError("");
     try {
-      const res = await fetch("/api/checkout", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ tier: targetTier, fileName }),
-      });
-      const { url } = await res.json();
-      window.location.href = url;
-    } catch (err) {
-      setError("Payment failed. Please try again.");
+      await unlockTier(targetTier);
+    } catch (err: any) {
+      setError(err?.message || "Unlock failed. Please try again.");
     } finally {
       setPaymentLoading(null);
+      setLoading(false);
     }
   };
 
