@@ -565,6 +565,36 @@ export default function ReviewItNow() {
     } catch(e) {}
   };
 
+  // ── Upload playbook from file (.docx / .txt / .md) ───────────────────────────
+  const [playbookFileName, setPlaybookFileName] = useState<string|null>(null);
+  const uploadPlaybookFile = async (file: File) => {
+    if (!file || typeof window === 'undefined') return;
+    const name = file.name.toLowerCase();
+    const isDocx = name.endsWith(".docx") || file.type.includes("wordprocessingml");
+    const isText = name.endsWith(".txt") || name.endsWith(".md") || file.type.startsWith("text/");
+    if (!isDocx && !isText) { setError("Playbook must be .docx, .txt, or .md"); return; }
+    setError("");
+    try {
+      let text = "";
+      if (isDocx) {
+        const buf = await file.arrayBuffer();
+        const JSZip = window.JSZip || await new Promise<any>(r=>{const s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js";s.onload=()=>{setJsZipLoaded(true);r(window.JSZip);};document.head.appendChild(s);});
+        const zip = await JSZip.loadAsync(buf);
+        const xml = await zip.file("word/document.xml").async("string");
+        text = xml.replace(/<w:p[^>]*>/g,"\n").replace(/<[^>]+>/g,"").replace(/\s+\n/g,"\n").trim();
+      } else {
+        text = await file.text();
+      }
+      if (!text.trim()) { setError("Could not extract text from playbook file."); return; }
+      setPlaybook(text);
+      setPlaybookFileName(file.name);
+      setPlaybookSaved(false);
+      setUsePlaybook(true);
+    } catch(e: any) {
+      setError("Playbook upload failed: " + (e?.message || "unknown error"));
+    }
+  };
+
   const processFile = useCallback(async (file: File) => {
     if (!file) return;
     if (typeof window === 'undefined') return;
@@ -926,9 +956,13 @@ export default function ReviewItNow() {
                 />
                 <div style={{display:"flex",alignItems:"center",justifyContent:"space-between",marginTop:7}}>
                   <span style={{fontSize:11,color:C.textSub}}>
-                    {playbookLastSaved ? `Last saved ${playbookLastSaved}` : "One position per line \u00b7 Not yet saved"}
+                    {playbookFileName ? `Loaded from ${playbookFileName}` : playbookLastSaved ? `Last saved ${playbookLastSaved}` : "One position per line \u00b7 Not yet saved"}
                   </span>
                   <div style={{display:"flex",gap:6}}>
+                    <label style={{padding:"3px 10px",borderRadius:5,border:`1px solid ${C.border}`,background:"transparent",color:C.textSub,fontSize:11,cursor:"pointer",display:"inline-flex",alignItems:"center"}}>
+                      Upload file
+                      <input type="file" accept=".docx,.txt,.md,text/plain,text/markdown" style={{display:"none"}} onChange={e=>{const f=e.target.files?.[0]; if(f) uploadPlaybookFile(f); e.target.value="";}}/>
+                    </label>
                     {playbookLastSaved&&(
                       <button onClick={clearPlaybook} style={{padding:"3px 10px",borderRadius:5,border:`1px solid ${C.border}`,background:"transparent",color:C.textSub,fontSize:11,cursor:"pointer"}}>
                         Clear
