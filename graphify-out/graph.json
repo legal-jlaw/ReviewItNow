@@ -4,6 +4,34 @@
   "graph": {
     "hyperedges": [
       {
+        "id": "graphify_knowledge_graph_setup",
+        "label": "Graphify Knowledge Graph Setup Documentation",
+        "nodes": [
+          "claude",
+          "graphify_readme",
+          "graphify_claude_code_instructions"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.8,
+        "source_file": "graphify/README.md"
+      },
+      {
+        "id": "nextjs_public_assets",
+        "label": "Next.js Public SVG Assets",
+        "nodes": [
+          "public_file",
+          "public_globe",
+          "public_next",
+          "public_vercel",
+          "public_window"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.7,
+        "source_file": "public/next.svg"
+      },
+      {
         "id": "public_icon_asset_group",
         "label": "Next.js starter template SVG icon set",
         "nodes": [
@@ -29,8 +57,8 @@
       "_origin": "ast",
       "community": 12,
       "norm_label": "eslint.config.mjs",
-      "id": "eslint_config",
-      "community_name": "ESLint Config"
+      "community_name": "ESLint Config",
+      "id": "eslint_config"
     },
     {
       "label": "eslintConfig",
@@ -40,8 +68,8 @@
       "_origin": "ast",
       "community": 12,
       "norm_label": "eslintconfig",
-      "id": "eslint_config_eslintconfig",
-      "community_name": "ESLint Config"
+      "community_name": "ESLint Config",
+      "id": "eslint_config_eslintconfig"
     },
     {
       "label": "next.config.ts",
@@ -49,10 +77,10 @@
       "source_file": "next.config.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "norm_label": "next.config.ts",
-      "id": "next_config",
-      "community_name": "Next.js Config"
+      "community_name": "next.config.ts",
+      "id": "next_config"
     },
     {
       "label": "nextConfig",
@@ -60,10 +88,10 @@
       "source_file": "next.config.ts",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 13,
+      "community": 15,
       "norm_label": "nextconfig",
-      "id": "next_config_nextconfig",
-      "community_name": "Next.js Config"
+      "community_name": "next.config.ts",
+      "id": "next_config_nextconfig"
     },
     {
       "label": "package.json",
@@ -73,8 +101,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "package.json",
-      "id": "package",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package"
     },
     {
       "label": "name",
@@ -84,8 +112,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "name",
-      "id": "package_name",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_name"
     },
     {
       "label": "version",
@@ -95,8 +123,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "version",
-      "id": "package_version",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_version"
     },
     {
       "label": "private",
@@ -106,8 +134,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "private",
-      "id": "package_private",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_private"
     },
     {
       "label": "scripts",
@@ -117,8 +145,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "scripts",
-      "id": "package_scripts",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_scripts"
     },
     {
       "label": "dev",
@@ -128,8 +156,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "dev",
-      "id": "package_scripts_dev",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_scripts_dev"
     },
     {
       "label": "build",
@@ -139,8 +167,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "build",
-      "id": "package_scripts_build",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_scripts_build"
     },
     {
       "label": "start",
@@ -150,8 +178,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "start",
-      "id": "package_scripts_start",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_scripts_start"
     },
     {
       "label": "lint",
@@ -161,8 +189,8 @@
       "_origin": "ast",
       "community": 2,
       "norm_label": "lint",
-      "id": "package_scripts_lint",
-      "community_name": "NPM Package Scripts"
+      "community_name": "NPM Package Scripts",
+      "id": "package_scripts_lint"
     },
     {
       "label": "dependencies",
@@ -172,8 +200,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "dependencies",
-      "id": "package_dependencies",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies"
     },
     {
       "label": "@anthropic-ai/sdk",
@@ -183,8 +211,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "@anthropic-ai/sdk",
-      "id": "package_dependencies_anthropic_ai_sdk",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies_anthropic_ai_sdk"
     },
     {
       "label": "@supabase/supabase-js",
@@ -194,8 +222,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "@supabase/supabase-js",
-      "id": "package_dependencies_supabase_supabase_js",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies_supabase_supabase_js"
     },
     {
       "label": "jszip",
@@ -205,8 +233,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "jszip",
-      "id": "package_dependencies_jszip",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies_jszip"
     },
     {
       "label": "next",
@@ -216,8 +244,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "next",
-      "id": "package_dependencies_next",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies_next"
     },
     {
       "label": "react",
@@ -227,8 +255,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "react",
-      "id": "package_dependencies_react",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies_react"
     },
     {
       "label": "react-dom",
@@ -238,8 +266,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "react-dom",
-      "id": "package_dependencies_react_dom",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies_react_dom"
     },
     {
       "label": "stripe",
@@ -249,8 +277,8 @@
       "_origin": "ast",
       "community": 4,
       "norm_label": "stripe",
-      "id": "package_dependencies_stripe",
-      "community_name": "Runtime Dependencies"
+      "community_name": "Runtime Dependencies",
+      "id": "package_dependencies_stripe"
     },
     {
       "label": "devDependencies",
@@ -260,8 +288,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "devdependencies",
-      "id": "package_devdependencies",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies"
     },
     {
       "label": "@tailwindcss/postcss",
@@ -271,8 +299,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "@tailwindcss/postcss",
-      "id": "package_devdependencies_tailwindcss_postcss",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_tailwindcss_postcss"
     },
     {
       "label": "@types/node",
@@ -282,8 +310,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "@types/node",
-      "id": "package_devdependencies_types_node",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_types_node"
     },
     {
       "label": "@types/react",
@@ -293,8 +321,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "@types/react",
-      "id": "package_devdependencies_types_react",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_types_react"
     },
     {
       "label": "@types/react-dom",
@@ -304,8 +332,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "@types/react-dom",
-      "id": "package_devdependencies_types_react_dom",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_types_react_dom"
     },
     {
       "label": "eslint",
@@ -315,8 +343,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "eslint",
-      "id": "package_devdependencies_eslint",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_eslint"
     },
     {
       "label": "eslint-config-next",
@@ -326,8 +354,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "eslint-config-next",
-      "id": "package_devdependencies_eslint_config_next",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_eslint_config_next"
     },
     {
       "label": "tailwindcss",
@@ -337,8 +365,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "tailwindcss",
-      "id": "package_devdependencies_tailwindcss",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_tailwindcss"
     },
     {
       "label": "typescript",
@@ -348,8 +376,8 @@
       "_origin": "ast",
       "community": 3,
       "norm_label": "typescript",
-      "id": "package_devdependencies_typescript",
-      "community_name": "Dev Dependencies"
+      "community_name": "Dev Dependencies",
+      "id": "package_devdependencies_typescript"
     },
     {
       "label": "postcss.config.mjs",
@@ -357,10 +385,10 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "postcss.config.mjs",
-      "id": "postcss_config",
-      "community_name": "PostCSS Config"
+      "community_name": "postcss.config.mjs",
+      "id": "postcss_config"
     },
     {
       "label": "config",
@@ -368,10 +396,10 @@
       "source_file": "postcss.config.mjs",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 14,
+      "community": 16,
       "norm_label": "config",
-      "id": "postcss_config_config",
-      "community_name": "PostCSS Config"
+      "community_name": "postcss.config.mjs",
+      "id": "postcss_config_config"
     },
     {
       "label": "route.ts",
@@ -381,8 +409,8 @@
       "_origin": "ast",
       "community": 9,
       "norm_label": "route.ts",
-      "id": "src_app_api_anthropic_route",
-      "community_name": "API Client Route"
+      "community_name": "API Client Route",
+      "id": "src_app_api_anthropic_route"
     },
     {
       "label": "getClient()",
@@ -392,8 +420,8 @@
       "_origin": "ast",
       "community": 9,
       "norm_label": "getclient()",
-      "id": "src_app_api_anthropic_route_getclient",
-      "community_name": "API Client Route"
+      "community_name": "API Client Route",
+      "id": "src_app_api_anthropic_route_getclient"
     },
     {
       "label": "POST()",
@@ -403,8 +431,8 @@
       "_origin": "ast",
       "community": 9,
       "norm_label": "post()",
-      "id": "src_app_api_anthropic_route_post",
-      "community_name": "API Client Route"
+      "community_name": "API Client Route",
+      "id": "src_app_api_anthropic_route_post"
     },
     {
       "label": "route.ts",
@@ -412,10 +440,10 @@
       "source_file": "src/app/api/checkout/route.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 6,
+      "community": 7,
       "norm_label": "route.ts",
-      "id": "src_app_api_checkout_route",
-      "community_name": "Stripe Checkout Route"
+      "community_name": "route.ts",
+      "id": "src_app_api_checkout_route"
     },
     {
       "label": "getStripe()",
@@ -423,10 +451,10 @@
       "source_file": "src/app/api/checkout/route.ts",
       "source_location": "L4",
       "_origin": "ast",
-      "community": 6,
+      "community": 7,
       "norm_label": "getstripe()",
-      "id": "src_app_api_checkout_route_getstripe",
-      "community_name": "Stripe Checkout Route"
+      "community_name": "route.ts",
+      "id": "src_app_api_checkout_route_getstripe"
     },
     {
       "label": "PRICES",
@@ -434,10 +462,10 @@
       "source_file": "src/app/api/checkout/route.ts",
       "source_location": "L10",
       "_origin": "ast",
-      "community": 6,
+      "community": 7,
       "norm_label": "prices",
-      "id": "src_app_api_checkout_route_prices",
-      "community_name": "Stripe Checkout Route"
+      "community_name": "route.ts",
+      "id": "src_app_api_checkout_route_prices"
     },
     {
       "label": "POST()",
@@ -445,10 +473,10 @@
       "source_file": "src/app/api/checkout/route.ts",
       "source_location": "L15",
       "_origin": "ast",
-      "community": 6,
+      "community": 7,
       "norm_label": "post()",
-      "id": "src_app_api_checkout_route_post",
-      "community_name": "Stripe Checkout Route"
+      "community_name": "route.ts",
+      "id": "src_app_api_checkout_route_post"
     },
     {
       "label": "route.ts",
@@ -458,8 +486,8 @@
       "_origin": "ast",
       "community": 10,
       "norm_label": "route.ts",
-      "id": "src_app_api_webhook_route",
-      "community_name": "Stripe Checkout Route"
+      "community_name": "Stripe Checkout Route",
+      "id": "src_app_api_webhook_route"
     },
     {
       "label": "getStripe()",
@@ -469,8 +497,8 @@
       "_origin": "ast",
       "community": 10,
       "norm_label": "getstripe()",
-      "id": "src_app_api_webhook_route_getstripe",
-      "community_name": "Stripe Checkout Route"
+      "community_name": "Stripe Checkout Route",
+      "id": "src_app_api_webhook_route_getstripe"
     },
     {
       "label": "POST()",
@@ -480,8 +508,8 @@
       "_origin": "ast",
       "community": 10,
       "norm_label": "post()",
-      "id": "src_app_api_webhook_route_post",
-      "community_name": "Stripe Checkout Route"
+      "community_name": "Stripe Checkout Route",
+      "id": "src_app_api_webhook_route_post"
     },
     {
       "label": "layout.tsx",
@@ -489,10 +517,10 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "layout.tsx",
-      "id": "src_app_layout",
-      "community_name": "Root Layout"
+      "community_name": "layout.tsx",
+      "id": "src_app_layout"
     },
     {
       "label": "inter",
@@ -500,10 +528,10 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L6",
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "inter",
-      "id": "src_app_layout_inter",
-      "community_name": "Root Layout"
+      "community_name": "layout.tsx",
+      "id": "src_app_layout_inter"
     },
     {
       "label": "metadata",
@@ -511,10 +539,10 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L11",
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "metadata",
-      "id": "src_app_layout_metadata",
-      "community_name": "Root Layout"
+      "community_name": "layout.tsx",
+      "id": "src_app_layout_metadata"
     },
     {
       "label": "RootLayout()",
@@ -522,10 +550,10 @@
       "source_file": "src/app/layout.tsx",
       "source_location": "L17",
       "_origin": "ast",
-      "community": 7,
+      "community": 8,
       "norm_label": "rootlayout()",
-      "id": "src_app_layout_rootlayout",
-      "community_name": "Root Layout"
+      "community_name": "layout.tsx",
+      "id": "src_app_layout_rootlayout"
     },
     {
       "label": "page.tsx",
@@ -533,10 +561,10 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L1",
       "_origin": "ast",
-      "community": 15,
+      "community": 17,
       "norm_label": "page.tsx",
-      "id": "src_app_page",
-      "community_name": "Home Page"
+      "community_name": "page.tsx",
+      "id": "src_app_page"
     },
     {
       "label": "Home()",
@@ -544,10 +572,10 @@
       "source_file": "src/app/page.tsx",
       "source_location": "L3",
       "_origin": "ast",
-      "community": 15,
+      "community": 17,
       "norm_label": "home()",
-      "id": "src_app_page_home",
-      "community_name": "Home Page"
+      "community_name": "page.tsx",
+      "id": "src_app_page_home"
     },
     {
       "label": "page.tsx",
@@ -557,8 +585,8 @@
       "_origin": "ast",
       "community": 11,
       "norm_label": "page.tsx",
-      "id": "src_app_success_page",
-      "community_name": "Checkout Success Page"
+      "community_name": "Checkout Success Page",
+      "id": "src_app_success_page"
     },
     {
       "label": "SuccessContent()",
@@ -568,8 +596,8 @@
       "_origin": "ast",
       "community": 11,
       "norm_label": "successcontent()",
-      "id": "src_app_success_page_successcontent",
-      "community_name": "Checkout Success Page"
+      "community_name": "Checkout Success Page",
+      "id": "src_app_success_page_successcontent"
     },
     {
       "label": "SuccessPage()",
@@ -579,8 +607,8 @@
       "_origin": "ast",
       "community": 11,
       "norm_label": "successpage()",
-      "id": "src_app_success_page_successpage",
-      "community_name": "Checkout Success Page"
+      "community_name": "Checkout Success Page",
+      "id": "src_app_success_page_successpage"
     },
     {
       "label": "ReviewItNow.tsx",
@@ -590,8 +618,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "reviewitnow.tsx",
-      "id": "src_components_reviewitnow",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow"
     },
     {
       "label": "Agent",
@@ -601,8 +629,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "agent",
-      "id": "src_components_reviewitnow_agent",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_agent"
     },
     {
       "label": "AGENTS",
@@ -612,8 +640,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "agents",
-      "id": "src_components_reviewitnow_agents",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_agents"
     },
     {
       "label": "ROLES",
@@ -623,8 +651,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "roles",
-      "id": "src_components_reviewitnow_roles",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_roles"
     },
     {
       "label": "FOCUS_AREAS",
@@ -634,8 +662,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "focus_areas",
-      "id": "src_components_reviewitnow_focus_areas",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_focus_areas"
     },
     {
       "label": "JURISDICTIONS",
@@ -645,8 +673,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "jurisdictions",
-      "id": "src_components_reviewitnow_jurisdictions",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_jurisdictions"
     },
     {
       "label": "C",
@@ -656,8 +684,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "c",
-      "id": "src_components_reviewitnow_c",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_c"
     },
     {
       "label": "Paragraph",
@@ -667,8 +695,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "paragraph",
-      "id": "src_components_reviewitnow_paragraph",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_paragraph"
     },
     {
       "label": "CriticalIssue",
@@ -678,8 +706,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "criticalissue",
-      "id": "src_components_reviewitnow_criticalissue",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_criticalissue"
     },
     {
       "label": "CrossoverFlag",
@@ -689,8 +717,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "crossoverflag",
-      "id": "src_components_reviewitnow_crossoverflag",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_crossoverflag"
     },
     {
       "label": "FreeAnalysisData",
@@ -700,8 +728,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "freeanalysisdata",
-      "id": "src_components_reviewitnow_freeanalysisdata",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_freeanalysisdata"
     },
     {
       "label": "RedlineItem",
@@ -711,8 +739,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "redlineitem",
-      "id": "src_components_reviewitnow_redlineitem",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_redlineitem"
     },
     {
       "label": "escXml()",
@@ -720,10 +748,10 @@
       "source_file": "src/components/ReviewItNow.tsx",
       "source_location": "L187",
       "_origin": "ast",
-      "community": 5,
+      "community": 6,
       "norm_label": "escxml()",
-      "id": "src_components_reviewitnow_escxml",
-      "community_name": "DOCX Redline Injection"
+      "community_name": "injectTrackedChange",
+      "id": "src_components_reviewitnow_escxml"
     },
     {
       "label": "unescXml()",
@@ -731,10 +759,10 @@
       "source_file": "src/components/ReviewItNow.tsx",
       "source_location": "L188",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "norm_label": "unescxml()",
-      "id": "src_components_reviewitnow_unescxml",
-      "community_name": "DOCX XML Parsing"
+      "community_name": "unescXml",
+      "id": "src_components_reviewitnow_unescxml"
     },
     {
       "label": "parseDocxStructure()",
@@ -742,10 +770,10 @@
       "source_file": "src/components/ReviewItNow.tsx",
       "source_location": "L190",
       "_origin": "ast",
-      "community": 16,
+      "community": 18,
       "norm_label": "parsedocxstructure()",
-      "id": "src_components_reviewitnow_parsedocxstructure",
-      "community_name": "DOCX XML Parsing"
+      "community_name": "unescXml",
+      "id": "src_components_reviewitnow_parsedocxstructure"
     },
     {
       "label": "matchClauseToParaId()",
@@ -755,8 +783,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "matchclausetoparaid()",
-      "id": "src_components_reviewitnow_matchclausetoparaid",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_matchclausetoparaid"
     },
     {
       "label": "getParagraphText()",
@@ -764,10 +792,10 @@
       "source_file": "src/components/ReviewItNow.tsx",
       "source_location": "L241",
       "_origin": "ast",
-      "community": 5,
+      "community": 6,
       "norm_label": "getparagraphtext()",
-      "id": "src_components_reviewitnow_getparagraphtext",
-      "community_name": "DOCX Redline Injection"
+      "community_name": "injectTrackedChange",
+      "id": "src_components_reviewitnow_getparagraphtext"
     },
     {
       "label": "extractRPr()",
@@ -775,10 +803,10 @@
       "source_file": "src/components/ReviewItNow.tsx",
       "source_location": "L244",
       "_origin": "ast",
-      "community": 5,
+      "community": 6,
       "norm_label": "extractrpr()",
-      "id": "src_components_reviewitnow_extractrpr",
-      "community_name": "DOCX Redline Injection"
+      "community_name": "injectTrackedChange",
+      "id": "src_components_reviewitnow_extractrpr"
     },
     {
       "label": "injectTrackedChange()",
@@ -786,10 +814,10 @@
       "source_file": "src/components/ReviewItNow.tsx",
       "source_location": "L250",
       "_origin": "ast",
-      "community": 5,
+      "community": 6,
       "norm_label": "injecttrackedchange()",
-      "id": "src_components_reviewitnow_injecttrackedchange",
-      "community_name": "DOCX Redline Injection"
+      "community_name": "injectTrackedChange",
+      "id": "src_components_reviewitnow_injecttrackedchange"
     },
     {
       "label": "Window",
@@ -799,8 +827,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "window",
-      "id": "src_components_reviewitnow_window",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_window"
     },
     {
       "label": "applyRedlinesToDocx()",
@@ -808,10 +836,10 @@
       "source_file": "src/components/ReviewItNow.tsx",
       "source_location": "L274",
       "_origin": "ast",
-      "community": 5,
+      "community": 6,
       "norm_label": "applyredlinestodocx()",
-      "id": "src_components_reviewitnow_applyredlinestodocx",
-      "community_name": "DOCX Redline Injection"
+      "community_name": "injectTrackedChange",
+      "id": "src_components_reviewitnow_applyredlinestodocx"
     },
     {
       "label": "Pill()",
@@ -821,8 +849,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "pill()",
-      "id": "src_components_reviewitnow_pill",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_pill"
     },
     {
       "label": "TypeBadge()",
@@ -832,8 +860,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "typebadge()",
-      "id": "src_components_reviewitnow_typebadge",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_typebadge"
     },
     {
       "label": "RiskBadge()",
@@ -843,8 +871,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "riskbadge()",
-      "id": "src_components_reviewitnow_riskbadge",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_riskbadge"
     },
     {
       "label": "AgentBadge()",
@@ -854,8 +882,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "agentbadge()",
-      "id": "src_components_reviewitnow_agentbadge",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_agentbadge"
     },
     {
       "label": "ContractViewer()",
@@ -865,8 +893,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "contractviewer()",
-      "id": "src_components_reviewitnow_contractviewer",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_contractviewer"
     },
     {
       "label": "FreeResultsPanel()",
@@ -876,8 +904,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "freeresultspanel()",
-      "id": "src_components_reviewitnow_freeresultspanel",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_freeresultspanel"
     },
     {
       "label": "AnalysisRenderer()",
@@ -887,8 +915,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "analysisrenderer()",
-      "id": "src_components_reviewitnow_analysisrenderer",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_analysisrenderer"
     },
     {
       "label": "RedlineTable()",
@@ -898,8 +926,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "redlinetable()",
-      "id": "src_components_reviewitnow_redlinetable",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_redlinetable"
     },
     {
       "label": "PaywallGate()",
@@ -909,8 +937,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "paywallgate()",
-      "id": "src_components_reviewitnow_paywallgate",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_paywallgate"
     },
     {
       "label": "ReviewItNow()",
@@ -920,8 +948,8 @@
       "_origin": "ast",
       "community": 0,
       "norm_label": "reviewitnow()",
-      "id": "src_components_reviewitnow_reviewitnow",
-      "community_name": "Contract Analysis UI"
+      "community_name": "Contract Analysis UI",
+      "id": "src_components_reviewitnow_reviewitnow"
     },
     {
       "label": "tsconfig.json",
@@ -931,8 +959,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "tsconfig.json",
-      "id": "tsconfig",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig"
     },
     {
       "label": "compilerOptions",
@@ -942,8 +970,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "compileroptions",
-      "id": "tsconfig_compileroptions",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions"
     },
     {
       "label": "target",
@@ -953,8 +981,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "target",
-      "id": "tsconfig_compileroptions_target",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_target"
     },
     {
       "label": "lib",
@@ -964,8 +992,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "lib",
-      "id": "tsconfig_compileroptions_lib",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_lib"
     },
     {
       "label": "allowJs",
@@ -975,8 +1003,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "allowjs",
-      "id": "tsconfig_compileroptions_allowjs",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_allowjs"
     },
     {
       "label": "skipLibCheck",
@@ -986,8 +1014,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "skiplibcheck",
-      "id": "tsconfig_compileroptions_skiplibcheck",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_skiplibcheck"
     },
     {
       "label": "strict",
@@ -997,8 +1025,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "strict",
-      "id": "tsconfig_compileroptions_strict",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_strict"
     },
     {
       "label": "noEmit",
@@ -1008,8 +1036,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "noemit",
-      "id": "tsconfig_compileroptions_noemit",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_noemit"
     },
     {
       "label": "esModuleInterop",
@@ -1019,8 +1047,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "esmoduleinterop",
-      "id": "tsconfig_compileroptions_esmoduleinterop",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_esmoduleinterop"
     },
     {
       "label": "module",
@@ -1030,8 +1058,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "module",
-      "id": "tsconfig_compileroptions_module",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_module"
     },
     {
       "label": "moduleResolution",
@@ -1041,8 +1069,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "moduleresolution",
-      "id": "tsconfig_compileroptions_moduleresolution",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_moduleresolution"
     },
     {
       "label": "resolveJsonModule",
@@ -1052,8 +1080,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "resolvejsonmodule",
-      "id": "tsconfig_compileroptions_resolvejsonmodule",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_resolvejsonmodule"
     },
     {
       "label": "isolatedModules",
@@ -1063,8 +1091,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "isolatedmodules",
-      "id": "tsconfig_compileroptions_isolatedmodules",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_isolatedmodules"
     },
     {
       "label": "jsx",
@@ -1074,8 +1102,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "jsx",
-      "id": "tsconfig_compileroptions_jsx",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_jsx"
     },
     {
       "label": "incremental",
@@ -1085,8 +1113,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "incremental",
-      "id": "tsconfig_compileroptions_incremental",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_incremental"
     },
     {
       "label": "plugins",
@@ -1096,8 +1124,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "plugins",
-      "id": "tsconfig_compileroptions_plugins",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_plugins"
     },
     {
       "label": "paths",
@@ -1107,8 +1135,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "paths",
-      "id": "tsconfig_compileroptions_paths",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_compileroptions_paths"
     },
     {
       "label": "@/*",
@@ -1118,8 +1146,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "@/*",
-      "id": "tsconfig_paths",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_paths"
     },
     {
       "label": "include",
@@ -1129,8 +1157,8 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "include",
-      "id": "tsconfig_include",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_include"
     },
     {
       "label": "exclude",
@@ -1140,25 +1168,71 @@
       "_origin": "ast",
       "community": 1,
       "norm_label": "exclude",
-      "id": "tsconfig_exclude",
-      "community_name": "TypeScript Compiler Config"
+      "community_name": "TypeScript Compiler Config",
+      "id": "tsconfig_exclude"
     },
     {
-      "label": "CLAUDE.md",
-      "file_type": "document",
-      "source_file": "CLAUDE.md",
-      "source_location": null,
-      "source_url": null,
-      "captured_at": null,
-      "author": null,
-      "contributor": null,
-      "community": 8,
-      "norm_label": "claude.md",
-      "id": "claude_doc",
-      "community_name": "Project Docs"
+      "label": "merge-and-serve.sh",
+      "file_type": "code",
+      "source_file": "graphify/merge-and-serve.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "merge-and-serve.sh",
+      "community_name": "merge-and-serve.sh",
+      "id": "graphify_merge_and_serve"
     },
     {
-      "label": "AGENTS.md",
+      "label": "merge-and-serve.sh script",
+      "file_type": "code",
+      "source_file": "graphify/merge-and-serve.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": 13,
+      "norm_label": "merge-and-serve.sh script",
+      "community_name": "merge-and-serve.sh",
+      "id": "graphify_merge_and_serve_sh__entry"
+    },
+    {
+      "label": "setup-project.sh",
+      "file_type": "code",
+      "source_file": "graphify/setup-project.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "setup-project.sh",
+      "community_name": "setup-project.sh",
+      "id": "graphify_setup_project"
+    },
+    {
+      "label": "setup-project.sh script",
+      "file_type": "code",
+      "source_file": "graphify/setup-project.sh",
+      "source_location": "L1",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "_origin": "ast",
+      "community": 14,
+      "norm_label": "setup-project.sh script",
+      "community_name": "setup-project.sh",
+      "id": "graphify_setup_project_sh__entry"
+    },
+    {
+      "label": "Next.js Agent Rules",
       "file_type": "document",
       "source_file": "AGENTS.md",
       "source_location": null,
@@ -1166,13 +1240,27 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
-      "norm_label": "agents.md",
-      "id": "agents_doc",
-      "community_name": "Project Docs"
+      "community": 5,
+      "norm_label": "next.js agent rules",
+      "community_name": "Claude Project Instructions",
+      "id": "agents"
     },
     {
-      "label": "README.md",
+      "label": "Claude Project Instructions",
+      "file_type": "document",
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 5,
+      "norm_label": "claude project instructions",
+      "community_name": "Claude Project Instructions",
+      "id": "claude"
+    },
+    {
+      "label": "Next.js Project README",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": null,
@@ -1180,13 +1268,41 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 8,
-      "norm_label": "readme.md",
-      "id": "readme_doc",
-      "community_name": "Project Docs"
+      "community": 5,
+      "norm_label": "next.js project readme",
+      "community_name": "Claude Project Instructions",
+      "id": "readme"
     },
     {
-      "label": "public/file.svg",
+      "label": "Graphify Claude Code Setup Instructions",
+      "file_type": "document",
+      "source_file": "graphify/CLAUDE_CODE_INSTRUCTIONS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 5,
+      "norm_label": "graphify claude code setup instructions",
+      "community_name": "Claude Project Instructions",
+      "id": "graphify_claude_code_instructions"
+    },
+    {
+      "label": "Graphify Cross-Project README",
+      "file_type": "document",
+      "source_file": "graphify/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "community": 5,
+      "norm_label": "graphify cross-project readme",
+      "community_name": "Claude Project Instructions",
+      "id": "graphify_readme"
+    },
+    {
+      "label": "File Icon SVG",
       "file_type": "image",
       "source_file": "public/file.svg",
       "source_location": null,
@@ -1194,13 +1310,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 17,
-      "norm_label": "public/file.svg",
-      "id": "public_file_icon",
-      "community_name": "File Icon Asset"
+      "community": 19,
+      "norm_label": "file icon svg",
+      "community_name": "File Icon SVG",
+      "id": "public_file"
     },
     {
-      "label": "public/globe.svg",
+      "label": "Globe Icon SVG",
       "file_type": "image",
       "source_file": "public/globe.svg",
       "source_location": null,
@@ -1208,13 +1324,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 18,
-      "norm_label": "public/globe.svg",
-      "id": "public_globe_icon",
-      "community_name": "Globe Icon Asset"
+      "community": 20,
+      "norm_label": "globe icon svg",
+      "community_name": "Globe Icon SVG",
+      "id": "public_globe"
     },
     {
-      "label": "public/next.svg",
+      "label": "Next.js Logo SVG",
       "file_type": "image",
       "source_file": "public/next.svg",
       "source_location": null,
@@ -1222,13 +1338,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 19,
-      "norm_label": "public/next.svg",
-      "id": "public_next_icon",
-      "community_name": "Next.js Logo Asset"
+      "community": 21,
+      "norm_label": "next.js logo svg",
+      "community_name": "Next.js Logo SVG",
+      "id": "public_next"
     },
     {
-      "label": "public/vercel.svg",
+      "label": "Vercel Logo SVG",
       "file_type": "image",
       "source_file": "public/vercel.svg",
       "source_location": null,
@@ -1236,13 +1352,13 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 20,
-      "norm_label": "public/vercel.svg",
-      "id": "public_vercel_icon",
-      "community_name": "Vercel Logo Asset"
+      "community": 22,
+      "norm_label": "vercel logo svg",
+      "community_name": "Vercel Logo SVG",
+      "id": "public_vercel"
     },
     {
-      "label": "public/window.svg",
+      "label": "Window Icon SVG",
       "file_type": "image",
       "source_file": "public/window.svg",
       "source_location": null,
@@ -1250,10 +1366,10 @@
       "captured_at": null,
       "author": null,
       "contributor": null,
-      "community": 21,
-      "norm_label": "public/window.svg",
-      "id": "public_window_icon",
-      "community_name": "Window Icon Asset"
+      "community": 23,
+      "norm_label": "window icon svg",
+      "community_name": "Window Icon SVG",
+      "id": "public_window"
     }
   ],
   "links": [
@@ -2279,27 +2395,105 @@
       "target": "tsconfig_paths"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify/merge-and-serve.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_merge_and_serve",
+      "target": "graphify_merge_and_serve_sh__entry"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "graphify/setup-project.sh",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "graphify_setup_project",
+      "target": "graphify_setup_project_sh__entry"
+    },
+    {
       "relation": "references",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "CLAUDE.md",
-      "source_location": "line 1",
+      "source_location": null,
       "weight": 1.0,
-      "source": "claude_doc",
-      "target": "agents_doc"
+      "source": "claude",
+      "target": "agents"
     },
     {
       "relation": "conceptually_related_to",
       "confidence": "INFERRED",
-      "confidence_score": 0.4,
+      "confidence_score": 0.55,
       "source_file": "README.md",
       "source_location": null,
-      "weight": 0.5,
-      "source": "readme_doc",
-      "target": "agents_doc"
+      "weight": 0.55,
+      "source": "readme",
+      "target": "agents"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.6,
+      "source_file": "CLAUDE.md",
+      "source_location": null,
+      "weight": 0.6,
+      "source": "claude",
+      "target": "graphify_readme"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 0.85,
+      "source_file": "graphify/CLAUDE_CODE_INSTRUCTIONS.md",
+      "source_location": null,
+      "weight": 0.85,
+      "source": "graphify_claude_code_instructions",
+      "target": "claude"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify/README.md",
+      "source_location": null,
+      "weight": 0.8,
+      "source": "graphify_readme",
+      "target": "graphify_claude_code_instructions"
     }
   ],
   "hyperedges": [
+    {
+      "id": "graphify_knowledge_graph_setup",
+      "label": "Graphify Knowledge Graph Setup Documentation",
+      "nodes": [
+        "claude",
+        "graphify_readme",
+        "graphify_claude_code_instructions"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "graphify/README.md"
+    },
+    {
+      "id": "nextjs_public_assets",
+      "label": "Next.js Public SVG Assets",
+      "nodes": [
+        "public_file",
+        "public_globe",
+        "public_next",
+        "public_vercel",
+        "public_window"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "public/next.svg"
+    },
     {
       "id": "public_icon_asset_group",
       "label": "Next.js starter template SVG icon set",
@@ -2316,5 +2510,5 @@
       "source_file": "public/"
     }
   ],
-  "built_at_commit": "c4f30cc8fed80441f4b31f0c9410bf0cb3de5916"
+  "built_at_commit": "42182c159cacebbc337badea46d2c670c4c8eae9"
 }
