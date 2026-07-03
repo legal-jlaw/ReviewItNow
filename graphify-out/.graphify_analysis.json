@@ -1,0 +1,251 @@
+{
+  "communities": {
+    "0": [
+      "src_components_reviewitnow",
+      "src_components_reviewitnow_agent",
+      "src_components_reviewitnow_agentbadge",
+      "src_components_reviewitnow_agents",
+      "src_components_reviewitnow_analysisrenderer",
+      "src_components_reviewitnow_c",
+      "src_components_reviewitnow_contractviewer",
+      "src_components_reviewitnow_criticalissue",
+      "src_components_reviewitnow_crossoverflag",
+      "src_components_reviewitnow_focus_areas",
+      "src_components_reviewitnow_freeanalysisdata",
+      "src_components_reviewitnow_freeresultspanel",
+      "src_components_reviewitnow_jurisdictions",
+      "src_components_reviewitnow_matchclausetoparaid",
+      "src_components_reviewitnow_paragraph",
+      "src_components_reviewitnow_paywallgate",
+      "src_components_reviewitnow_pill",
+      "src_components_reviewitnow_redlineitem",
+      "src_components_reviewitnow_redlinetable",
+      "src_components_reviewitnow_reviewitnow",
+      "src_components_reviewitnow_riskbadge",
+      "src_components_reviewitnow_roles",
+      "src_components_reviewitnow_typebadge",
+      "src_components_reviewitnow_window"
+    ],
+    "1": [
+      "tsconfig",
+      "tsconfig_compileroptions",
+      "tsconfig_compileroptions_allowjs",
+      "tsconfig_compileroptions_esmoduleinterop",
+      "tsconfig_compileroptions_incremental",
+      "tsconfig_compileroptions_isolatedmodules",
+      "tsconfig_compileroptions_jsx",
+      "tsconfig_compileroptions_lib",
+      "tsconfig_compileroptions_module",
+      "tsconfig_compileroptions_moduleresolution",
+      "tsconfig_compileroptions_noemit",
+      "tsconfig_compileroptions_paths",
+      "tsconfig_compileroptions_plugins",
+      "tsconfig_compileroptions_resolvejsonmodule",
+      "tsconfig_compileroptions_skiplibcheck",
+      "tsconfig_compileroptions_strict",
+      "tsconfig_compileroptions_target",
+      "tsconfig_exclude",
+      "tsconfig_include",
+      "tsconfig_paths"
+    ],
+    "2": [
+      "package",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_start",
+      "package_version"
+    ],
+    "3": [
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_config_next",
+      "package_devdependencies_tailwindcss",
+      "package_devdependencies_tailwindcss_postcss",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_types_react_dom",
+      "package_devdependencies_typescript"
+    ],
+    "4": [
+      "package_dependencies",
+      "package_dependencies_anthropic_ai_sdk",
+      "package_dependencies_jszip",
+      "package_dependencies_next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_stripe",
+      "package_dependencies_supabase_supabase_js"
+    ],
+    "5": [
+      "src_components_reviewitnow_applyredlinestodocx",
+      "src_components_reviewitnow_escxml",
+      "src_components_reviewitnow_extractrpr",
+      "src_components_reviewitnow_getparagraphtext",
+      "src_components_reviewitnow_injecttrackedchange"
+    ],
+    "6": [
+      "src_app_api_checkout_route",
+      "src_app_api_checkout_route_getstripe",
+      "src_app_api_checkout_route_post",
+      "src_app_api_checkout_route_prices"
+    ],
+    "7": [
+      "src_app_layout",
+      "src_app_layout_inter",
+      "src_app_layout_metadata",
+      "src_app_layout_rootlayout"
+    ],
+    "8": [
+      "agents_doc",
+      "claude_doc",
+      "readme_doc"
+    ],
+    "9": [
+      "src_app_api_anthropic_route",
+      "src_app_api_anthropic_route_getclient",
+      "src_app_api_anthropic_route_post"
+    ],
+    "10": [
+      "src_app_api_webhook_route",
+      "src_app_api_webhook_route_getstripe",
+      "src_app_api_webhook_route_post"
+    ],
+    "11": [
+      "src_app_success_page",
+      "src_app_success_page_successcontent",
+      "src_app_success_page_successpage"
+    ],
+    "12": [
+      "eslint_config",
+      "eslint_config_eslintconfig"
+    ],
+    "13": [
+      "next_config",
+      "next_config_nextconfig"
+    ],
+    "14": [
+      "postcss_config",
+      "postcss_config_config"
+    ],
+    "15": [
+      "src_app_page",
+      "src_app_page_home"
+    ],
+    "16": [
+      "src_components_reviewitnow_parsedocxstructure",
+      "src_components_reviewitnow_unescxml"
+    ],
+    "17": [
+      "public_file_icon"
+    ],
+    "18": [
+      "public_globe_icon"
+    ],
+    "19": [
+      "public_next_icon"
+    ],
+    "20": [
+      "public_vercel_icon"
+    ],
+    "21": [
+      "public_window_icon"
+    ]
+  },
+  "cohesion": {
+    "0": 0.08333333333333333,
+    "1": 0.1,
+    "2": 0.2222222222222222,
+    "3": 0.2222222222222222,
+    "4": 0.25,
+    "5": 0.5,
+    "6": 0.6666666666666666,
+    "7": 0.5,
+    "8": 0.6666666666666666,
+    "9": 1.0,
+    "10": 1.0,
+    "11": 0.6666666666666666,
+    "12": 1.0,
+    "13": 1.0,
+    "14": 1.0,
+    "15": 1.0,
+    "16": 1.0,
+    "17": 1.0,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0,
+    "21": 1.0
+  },
+  "gods": [
+    {
+      "id": "tsconfig_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "src_components_reviewitnow_injecttrackedchange",
+      "label": "injectTrackedChange()",
+      "degree": 5
+    },
+    {
+      "id": "src_components_reviewitnow_getparagraphtext",
+      "label": "getParagraphText()",
+      "degree": 4
+    },
+    {
+      "id": "src_components_reviewitnow_unescxml",
+      "label": "unescXml()",
+      "degree": 3
+    },
+    {
+      "id": "src_components_reviewitnow_applyredlinestodocx",
+      "label": "applyRedlinesToDocx()",
+      "degree": 3
+    },
+    {
+      "id": "src_app_api_anthropic_route_getclient",
+      "label": "getClient()",
+      "degree": 2
+    },
+    {
+      "id": "src_app_api_anthropic_route_post",
+      "label": "POST()",
+      "degree": 2
+    },
+    {
+      "id": "src_app_api_checkout_route_getstripe",
+      "label": "getStripe()",
+      "degree": 2
+    },
+    {
+      "id": "src_app_api_checkout_route_post",
+      "label": "POST()",
+      "degree": 2
+    }
+  ],
+  "surprises": [
+    {
+      "source": "getParagraphText()",
+      "target": "unescXml()",
+      "source_files": [
+        "src/components/ReviewItNow.tsx",
+        "src/components/ReviewItNow.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "note": "Bridges community 16 \u2192 community 5"
+    }
+  ],
+  "tokens": {
+    "input": 31931,
+    "output": 2412
+  }
+}
