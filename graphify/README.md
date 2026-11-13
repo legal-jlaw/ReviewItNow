@@ -33,7 +33,12 @@ teammates and CI get the graph without re-extracting.
 graphify hook install     # post-commit auto-refresh (per repo)
 # or on demand:
 graphify update .
+# if update reports that the community set changed:
+graphify label . --missing-only --backend claude-cli --max-concurrency 1
 ```
+
+`update` rebuilds the code graph only. After a refresh, re-run the graph
+merge in section 4 so the shared graph picks up the change.
 
 ## 3. Cross-project queries (no server needed)
 
