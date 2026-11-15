@@ -11,10 +11,23 @@ exactly; all of this runs locally with no API keys.
 
 ## Context
 
-- The graphs for ReviewItNow were already built in a remote session and
-  pushed to the branch `claude/graphify-cross-project-iwvi6h` of
-  `legal-jlaw/ReviewItNow` — NOT main. That's why earlier searches found
-  no `graphify/` directory.
+- ReviewItNow is already done. Its graphify setup (`graphify/`,
+  `graphify-out/`, the CLAUDE.md rules and the `.claude/settings.json`
+  hooks) is merged into `main` of `legal-jlaw/ReviewItNow`. A local clone
+  that has not pulled `main` since will not have these files.
+- A newer rebuild of the ReviewItNow graph (133 nodes, 178 edges, 16
+  communities, graphify 0.9.106) sits on the branch
+  `claude/graphify-cross-project-iwvi6h`, one commit ahead of `main` and
+  not merged yet.
+- "Merge" means two different things in this document:
+  - a git merge (Step 1) only brings the finished graphify files onto this
+    machine. It adds tooling files and changes no app code.
+  - a graph merge (Step 5, `graphify merge-graphs`) combines the four
+    projects' `graph.json` files into one cross-project graph.
+- The end result: every project has its own graph that Claude consults
+  before reading source, and one merged graph is served over MCP so any
+  Claude Code session on this machine can answer questions that span all
+  four projects.
 - My projects live on this machine (adjust paths if needed — note that
   "ReviewItNow 2" contains a space and must be quoted):
   - `~/Desktop/ReviewItNow 2`  (repo: legal-jlaw/ReviewItNow)
@@ -26,13 +39,15 @@ exactly; all of this runs locally with no API keys.
 
 ```bash
 cd ~/Desktop/"ReviewItNow 2"
+git checkout main && git pull origin main
+# optional: also take the newer graph rebuild that is not on main yet
 git fetch origin claude/graphify-cross-project-iwvi6h
-git merge origin/claude/graphify-cross-project-iwvi6h   # or checkout the branch first to review
+git merge origin/claude/graphify-cross-project-iwvi6h
 ```
 
 This brings in `graphify/` (scripts + docs), `graphify-out/` (the finished
-ReviewItNow graph: 110 nodes, 22 communities), CLAUDE.md rules, and
-`.claude/settings.json` hooks.
+ReviewItNow graph), CLAUDE.md rules, and `.claude/settings.json` hooks.
+Nothing needs to be built for ReviewItNow.
 
 ## Step 2 — Install graphify
 
@@ -105,9 +120,20 @@ claude mcp add --scope user graphify -- graphify-mcp ~/.graphify/merged-graph.js
 In each repo: `graphify hook install` (post-commit auto-refresh), and after
 big changes re-run `graphify update .` then re-run the merge in Step 5.
 
+`graphify update .` rebuilds the code graph with no LLM. If it reports that
+the community set changed, name the new communities with:
+
+```bash
+graphify label . --missing-only --backend claude-cli --max-concurrency 1
+```
+
+Docs and images are not re-read by `update`; re-run the `extract` command
+from Step 3 when those change.
+
 ## Step 7 — Commit
 
 In each of the three newly-graphed repos, commit `graphify-out/` (except
-`cache/` and dated backup dirs — gitignore those), `CLAUDE.md`, and
+`cache/`, dated backup dirs, `.graphify_build_state.json` and
+`.graphify_labels.pending.json` — gitignore those), `CLAUDE.md`, and
 `.claude/settings.json` on a feature branch, and push. Ask me before
 merging to main.

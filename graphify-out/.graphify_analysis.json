@@ -1,21 +1,29 @@
 {
   "communities": {
     "0": [
+      "src_app_page",
+      "src_app_page_home",
       "src_components_reviewitnow",
       "src_components_reviewitnow_agent",
       "src_components_reviewitnow_agentbadge",
       "src_components_reviewitnow_agents",
       "src_components_reviewitnow_analysisrenderer",
+      "src_components_reviewitnow_applyredlinestodocx",
       "src_components_reviewitnow_c",
       "src_components_reviewitnow_contractviewer",
       "src_components_reviewitnow_criticalissue",
       "src_components_reviewitnow_crossoverflag",
+      "src_components_reviewitnow_escxml",
+      "src_components_reviewitnow_extractrpr",
       "src_components_reviewitnow_focus_areas",
       "src_components_reviewitnow_freeanalysisdata",
       "src_components_reviewitnow_freeresultspanel",
+      "src_components_reviewitnow_getparagraphtext",
+      "src_components_reviewitnow_injecttrackedchange",
       "src_components_reviewitnow_jurisdictions",
       "src_components_reviewitnow_matchclausetoparaid",
       "src_components_reviewitnow_paragraph",
+      "src_components_reviewitnow_parsedocxstructure",
       "src_components_reviewitnow_paywallgate",
       "src_components_reviewitnow_pill",
       "src_components_reviewitnow_redlineitem",
@@ -24,6 +32,7 @@
       "src_components_reviewitnow_riskbadge",
       "src_components_reviewitnow_roles",
       "src_components_reviewitnow_typebadge",
+      "src_components_reviewitnow_unescxml",
       "src_components_reviewitnow_window"
     ],
     "1": [
@@ -45,21 +54,19 @@
       "tsconfig_compileroptions_strict",
       "tsconfig_compileroptions_target",
       "tsconfig_exclude",
-      "tsconfig_include",
-      "tsconfig_paths"
+      "tsconfig_include"
     ],
     "2": [
-      "package",
-      "package_name",
-      "package_private",
       "package_scripts",
       "package_scripts_build",
       "package_scripts_dev",
       "package_scripts_lint",
-      "package_scripts_start",
-      "package_version"
+      "package_scripts_start"
     ],
     "3": [
+      "eslint_config",
+      "eslint_config_eslintconfig",
+      "package",
       "package_devdependencies",
       "package_devdependencies_eslint",
       "package_devdependencies_eslint_config_next",
@@ -68,17 +75,33 @@
       "package_devdependencies_types_node",
       "package_devdependencies_types_react",
       "package_devdependencies_types_react_dom",
-      "package_devdependencies_typescript"
+      "package_devdependencies_typescript",
+      "package_name",
+      "package_private",
+      "package_version",
+      "ref_eslint",
+      "ref_eslint_config_next",
+      "ref_tailwindcss",
+      "ref_tailwindcss_postcss",
+      "ref_types_node",
+      "ref_types_react",
+      "ref_types_react_dom",
+      "ref_typescript"
     ],
     "4": [
       "package_dependencies",
-      "package_dependencies_anthropic_ai_sdk",
       "package_dependencies_jszip",
       "package_dependencies_next",
       "package_dependencies_react",
       "package_dependencies_react_dom",
-      "package_dependencies_stripe",
-      "package_dependencies_supabase_supabase_js"
+      "package_dependencies_supabase_supabase_js",
+      "ref_jszip",
+      "ref_react",
+      "ref_react_dom",
+      "ref_supabase_supabase_js",
+      "src_app_success_page",
+      "src_app_success_page_successcontent",
+      "src_app_success_page_successpage"
     ],
     "5": [
       "agents",
@@ -87,43 +110,33 @@
       "graphify_readme",
       "readme"
     ],
-    "6": [
-      "src_components_reviewitnow_applyredlinestodocx",
-      "src_components_reviewitnow_escxml",
-      "src_components_reviewitnow_extractrpr",
-      "src_components_reviewitnow_getparagraphtext",
-      "src_components_reviewitnow_injecttrackedchange"
-    ],
     "7": [
+      "next_config",
+      "next_config_nextconfig",
+      "package_dependencies_stripe",
+      "ref_next",
+      "ref_stripe",
       "src_app_api_checkout_route",
       "src_app_api_checkout_route_getstripe",
       "src_app_api_checkout_route_post",
-      "src_app_api_checkout_route_prices"
-    ],
-    "8": [
+      "src_app_api_checkout_route_prices",
+      "src_app_api_webhook_route",
+      "src_app_api_webhook_route_getstripe",
+      "src_app_api_webhook_route_post",
+      "src_app_api_webhook_route_rationale_43",
+      "src_app_globals",
       "src_app_layout",
       "src_app_layout_inter",
       "src_app_layout_metadata",
       "src_app_layout_rootlayout"
     ],
     "9": [
+      "package_dependencies_anthropic_ai_sdk",
+      "ref_anthropic_ai_sdk",
       "src_app_api_anthropic_route",
       "src_app_api_anthropic_route_getclient",
+      "src_app_api_anthropic_route_maxduration",
       "src_app_api_anthropic_route_post"
-    ],
-    "10": [
-      "src_app_api_webhook_route",
-      "src_app_api_webhook_route_getstripe",
-      "src_app_api_webhook_route_post"
-    ],
-    "11": [
-      "src_app_success_page",
-      "src_app_success_page_successcontent",
-      "src_app_success_page_successpage"
-    ],
-    "12": [
-      "eslint_config",
-      "eslint_config_eslintconfig"
     ],
     "13": [
       "graphify_merge_and_serve",
@@ -133,21 +146,9 @@
       "graphify_setup_project",
       "graphify_setup_project_sh__entry"
     ],
-    "15": [
-      "next_config",
-      "next_config_nextconfig"
-    ],
     "16": [
       "postcss_config",
       "postcss_config_config"
-    ],
-    "17": [
-      "src_app_page",
-      "src_app_page_home"
-    ],
-    "18": [
-      "src_components_reviewitnow_parsedocxstructure",
-      "src_components_reviewitnow_unescxml"
     ],
     "19": [
       "public_file"
@@ -166,25 +167,17 @@
     ]
   },
   "cohesion": {
-    "0": 0.08333333333333333,
-    "1": 0.1,
-    "2": 0.2222222222222222,
-    "3": 0.2222222222222222,
-    "4": 0.25,
+    "0": 0.11931818181818182,
+    "1": 0.10526315789473684,
+    "2": 0.4,
+    "3": 0.1225296442687747,
+    "4": 0.16666666666666666,
     "5": 0.5,
-    "6": 0.5,
-    "7": 0.6666666666666666,
-    "8": 0.5,
-    "9": 1.0,
-    "10": 1.0,
-    "11": 0.6666666666666666,
-    "12": 1.0,
+    "7": 0.13071895424836602,
+    "9": 0.4,
     "13": 1.0,
     "14": 1.0,
-    "15": 1.0,
     "16": 1.0,
-    "17": 1.0,
-    "18": 1.0,
     "19": 1.0,
     "20": 1.0,
     "21": 1.0,
@@ -198,8 +191,28 @@
       "degree": 16
     },
     {
-      "id": "package_scripts",
-      "label": "scripts",
+      "id": "src_components_reviewitnow_reviewitnow",
+      "label": "ReviewItNow()",
+      "degree": 13
+    },
+    {
+      "id": "ref_next",
+      "label": "next",
+      "degree": 8
+    },
+    {
+      "id": "src_components_reviewitnow_pill",
+      "label": "Pill()",
+      "degree": 7
+    },
+    {
+      "id": "src_components_reviewitnow_freeresultspanel",
+      "label": "FreeResultsPanel()",
+      "degree": 6
+    },
+    {
+      "id": "src_components_reviewitnow_applyredlinestodocx",
+      "label": "applyRedlinesToDocx()",
       "degree": 5
     },
     {
@@ -208,53 +221,22 @@
       "degree": 5
     },
     {
-      "id": "src_components_reviewitnow_getparagraphtext",
-      "label": "getParagraphText()",
+      "id": "src_components_reviewitnow_riskbadge",
+      "label": "RiskBadge()",
+      "degree": 5
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 5
+    },
+    {
+      "id": "src_components_reviewitnow_analysisrenderer",
+      "label": "AnalysisRenderer()",
       "degree": 4
-    },
-    {
-      "id": "src_components_reviewitnow_unescxml",
-      "label": "unescXml()",
-      "degree": 3
-    },
-    {
-      "id": "src_components_reviewitnow_applyredlinestodocx",
-      "label": "applyRedlinesToDocx()",
-      "degree": 3
-    },
-    {
-      "id": "claude",
-      "label": "Claude Project Instructions",
-      "degree": 3
-    },
-    {
-      "id": "src_app_api_anthropic_route_getclient",
-      "label": "getClient()",
-      "degree": 2
-    },
-    {
-      "id": "src_app_api_anthropic_route_post",
-      "label": "POST()",
-      "degree": 2
-    },
-    {
-      "id": "src_app_api_checkout_route_getstripe",
-      "label": "getStripe()",
-      "degree": 2
     }
   ],
   "surprises": [
-    {
-      "source": "Next.js Project README",
-      "target": "Next.js Agent Rules",
-      "source_files": [
-        "README.md",
-        "AGENTS.md"
-      ],
-      "confidence": "INFERRED",
-      "relation": "conceptually_related_to",
-      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
-    },
     {
       "source": "Claude Project Instructions",
       "target": "Graphify Cross-Project README",
@@ -265,17 +247,6 @@
       "confidence": "INFERRED",
       "relation": "references",
       "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
-    },
-    {
-      "source": "Claude Project Instructions",
-      "target": "Next.js Agent Rules",
-      "source_files": [
-        "CLAUDE.md",
-        "AGENTS.md"
-      ],
-      "confidence": "EXTRACTED",
-      "relation": "references",
-      "why": "connects across different repos/directories"
     },
     {
       "source": "Graphify Claude Code Setup Instructions",
@@ -289,6 +260,28 @@
       "why": "connects across different repos/directories"
     },
     {
+      "source": "Home()",
+      "target": "ReviewItNow()",
+      "source_files": [
+        "src/app/page.tsx",
+        "src/components/ReviewItNow.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `Home()` unexpectedly reaches hub `ReviewItNow()`"
+    },
+    {
+      "source": "Next.js Project README",
+      "target": "Next.js Agent Rules",
+      "source_files": [
+        "README.md",
+        "AGENTS.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source"
+    },
+    {
       "source": "Graphify Cross-Project README",
       "target": "Graphify Claude Code Setup Instructions",
       "source_files": [
@@ -300,8 +293,41 @@
       "why": "inferred connection - not explicitly stated in source"
     }
   ],
-  "tokens": {
-    "input": 0,
-    "output": 0
-  }
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `react` connect `Runtime Dependencies and Success Page` to `Contract Analysis UI`, `Linting and Dev Tooling`?",
+      "why": "High betweenness centrality (0.254) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `File Icon SVG`, `Globe Icon SVG`, `Next.js Logo SVG` to the rest of the system?",
+      "why": "6 weakly-connected nodes found - possible documentation gaps or missing edges."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Contract Analysis UI` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.11931818181818182 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `next` connect `Stripe Checkout and Webhooks` to `Anthropic API Route`, `Linting and Dev Tooling`, `Runtime Dependencies and Success Page`?",
+      "why": "High betweenness centrality (0.154) - this node is a cross-community bridge."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `TypeScript Compiler Config` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Linting and Dev Tooling` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1225296442687747 - nodes in this community are weakly interconnected."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Stripe Checkout and Webhooks` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.13071895424836602 - nodes in this community are weakly interconnected."
+    }
+  ]
 }
